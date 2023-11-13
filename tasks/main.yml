@@ -1,6 +1,6 @@
 ---
 # tasks file for role-ohmyzsh
-- name: Ensure all configured dotfiles are links.
+- name: Ensure all ohmyzsh install using installer.
   command: "sh -c $(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   register: existing_ohmyzsh_info
   failed_when: false
